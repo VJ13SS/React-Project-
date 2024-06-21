@@ -1,0 +1,65 @@
+*{
+  box-sizing:border-box;
+}
+body{
+  margin:0;
+  font-family: 'Inter',sans-serif;
+  background-color: #1e1d21;
+}
+
+nav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0f0b0b;
+  padding:20px;
+}
+.nav-logo{
+  height:30px;
+  object-fit:cover;
+  margin-right:10px;
+}
+
+.nav-text1,.nav-text2{
+  margin:0;
+}
+.nav-text1{
+  color:#61DBFB;
+  margin-right:auto;
+}
+
+.nav-text2{
+  color:white;
+}
+
+main{
+  padding:35px 20px;
+  color:white;
+  background-image: url('./components/Images/React LogoLarge.png');
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y:75%;
+  /*we can also use background-position: right 75%;*/
+}
+
+.main-header{
+  font-weight: bold;
+  font-size:35px;
+  letter-spacing: -0.05em;
+}
+
+.main-facts{
+  margin-top:30px;
+  max-width:450px;
+}
+
+.main-facts li{
+  font-weight:550;
+  padding-block:10px;
+}
+
+/*To change the size,color of the bullets we use marker tag*/
+.main-facts li::marker{
+  font-size:1.5rem;
+  color:#61DBFB;
+}
