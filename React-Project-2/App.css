@@ -1,0 +1,107 @@
+*{
+  box-sizing: border-box;
+}
+
+body{
+  margin:0;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  background-color:#1a1a1f;
+}
+
+.container{
+  margin-top:50px;
+  border-radius:10px;
+  background-color:#171613;
+  color:white;
+}
+.info{
+  display: flex;
+  flex-direction:column;
+  align-items:center;
+  border:1px solid black;
+  border-radius:10px;
+}
+
+.info-img{
+  height:250px;
+  width:250px;
+  object-fit:cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.info-name{
+  margin-bottom:0;
+  font-weight:bold;
+}
+
+.info-job{
+  margin:0;
+}
+
+.info-text{
+  margin:15px;
+}
+
+.info-buttons{
+  display: flex;
+  gap:10px;
+}
+
+.info-buttons button{
+  height:25px;
+  width:80px;
+  border:none;
+  font-weight:bold;
+  border-radius:5px;
+  display:flex;
+  align-items: center;
+  gap:7px;
+}
+
+.info-linkedin{
+  background-color: #0088f0;
+  color:white;
+  font-size:0.75rem;
+}
+
+.about{
+  padding:0 20px;
+  max-width:250px;
+}
+.about-header{
+  margin-bottom:0;
+}
+
+.about-text{
+  margin-top:2px;
+  font-size:0.55rem;
+}
+
+.interests{
+  padding:0 20px;
+  max-width:250px;
+}
+
+.interests-header{
+  margin-bottom:0;
+}
+
+.intersests-text{
+  margin-top:2px;
+  font-size:0.55rem;
+}
+
+.social-media{
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  gap: 20px;
+  height:40px;
+  padding:10px;
+  background-color:black;
+  color:#6b6b6b;
+}
