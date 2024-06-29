@@ -1,0 +1,9 @@
+A project which gives an introduction to the cretiof dynamic websites using React.
+
+It is a simple meme generator created using React which will help you to generate meme images with the texts you provided.
+
+The project do focuses upon using api calls using React as well as you'll get a chance to explore the usage of other components like forms using React.
+
+Do try to check it out and share your suggestions.
+
+Here I have used Replit for development and the folder structure is shown in Project5.jpg.
