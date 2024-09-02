@@ -12,7 +12,7 @@ export default function App() {
     console.log(guessedLetters);
      
   }
-  
+  //Some declared variables might not be used now but they can be used to for further modifications in the future 
   //Getting a random word from the words array
   const [wordToGuess,setWordToGuess]=React.useState(words[Math.floor(Math.random() * words.length)].toUpperCase());
   const targetWordArray:string[] = wordToGuess.split('')
