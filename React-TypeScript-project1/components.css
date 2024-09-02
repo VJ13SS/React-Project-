@@ -1,0 +1,152 @@
+.drawing{
+  position:relative;
+  background:#ffffff;
+}
+
+.Base,.Stick,.Stick-head,.hook,.Body,.right-arm,.left-arm,.right-leg,.left-leg{
+  background-color:black;
+}
+.Base{
+  width:250px;
+  height:10px;
+}
+
+.Stick{
+  width:10px;
+  height:400px;
+  margin-left:120px;/*(width of base/2)-width of stick/2*/
+}
+
+.Stick-head{
+  width:200px;
+  height:10px;
+  margin-left:120px;/*(width of base/2)-width of stick/2*/
+}
+
+
+.hook{
+  width:10px;
+  height:50px;
+  position: absolute;
+  top:0;
+  right:0;
+  margin-left:200px;/*since it is aligned vertically we push it by 200px*/
+}
+
+.Head{
+  width:50px;
+  height:50px;
+  background-color:white;
+  border:10px solid black;
+  position: absolute;
+  margin-left:100px;
+  border-radius:50%;
+  top:50px;
+  right:-30px;/*we need to make the head appear below the hook
+  ...height of hook is -30px so we use -50px*/
+}
+
+.Body{
+  position: absolute;
+  width:10px;
+  height:100px;
+  top:110px;
+  right:0;
+}
+
+.right-arm{
+  width:100px;
+  height:10px;
+  position: absolute;
+  top:150px;
+  right:-100px;
+  rotate:-30deg;
+  transform-origin: left bottom;/*the rotation is applied from the left bottom corner*/
+}
+
+.left-arm{
+  width:100px;
+  height:10px;
+  position: absolute;
+  top:150px;
+  right:10px;
+  rotate:30deg;
+  transform-origin: right bottom;/*the rotation is applied from the right bottom corner*/
+}
+
+.right-leg{
+  width:100px;
+  height:10px;
+  position: absolute;
+  top:200px;
+  right:-100px;
+  rotate:45deg;
+  transform-origin: left top;/*the rotation is applied from the left bottom corner*/
+}
+
+.left-leg{
+  width:100px;
+  height:10px;
+  position: absolute;
+  top:200px;
+  right:10px;
+  rotate:-45deg;
+  transform-origin: right top;/*the rotation is applied from the right bottom corner*/
+}
+
+.word{
+  display: flex;
+  gap:20px;
+}
+
+.letter{
+  text-transform:uppercase;
+  font-weight:bolder;
+  font-size:2rem;
+  color:red;
+}
+
+.space{
+  border-bottom:5px solid black;
+}
+
+.key-container{
+  display: flex;
+  max-width:50%;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.key{
+  border:1px solid black;
+  width:50px;
+  height:50px;
+  background-color:#e8e8e8;
+  font-size:1.2rem;
+  font-weight:bolder;
+  color:black;
+  border-radius:5px;
+}
+
+.key.active{
+  background-color:#00ffdd44;
+  color:blue;
+  pointer-events: none;
+}
+
+.key.inactive{
+  background-color:#ffffff44;
+  opacity:0.3;
+  pointer-events: none;
+}
+
+.key:hover{
+  background-color:#0055ff44;
+  color: #ffffff ;
+}
+
+@media screen and (max-width:680px){
+  .key-container{
+    max-width:90%;
+  }
+}
